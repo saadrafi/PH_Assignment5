@@ -33,171 +33,231 @@
 
     <!-- -------------Main Start---------------- -->
 
-    <!-- <main class="w-[98%] mx-auto mt-10"> 
-    <section>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
+    <main class="w-[98%] mx-auto mt-10 mb-20 flex flex-col lg:flex-row lg:px-6 md:flex-row gap-3">
+      <!-- --------------Triangle Start--------------- -->
+      <section class="lg:w-[75%] md:w-[75%] w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2">
+        <div
+          class="card w-full mx-auto bg-base-100 border border-[#1111111A]"
+        >
+          <figure class="px-10 pt-10">
+            <img src="./images/triangle.png" alt="Shoes" class="h-48" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Triangle</h4>
+            <p>Area (A) = 0.5 x b x h</p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="b"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="h"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
 
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
-
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
-          </div>
-        </div>
-      </div>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
-
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+        <!-- ---------------Triangle End---------------- -->
+        <!-- ----------------Rectangle Start------------ -->
+        <div class="card w-full bg-base-100 border border-[#1111111A]">
+          <figure class="px-10 pt-10">
+            <img src="./images/rectangle.png" alt="Shoes" class="h-48" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Rectangle</h4>
+            <p>Area (A) = w x l</p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="w"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="l"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
+        <!-- ----------------Rectangle End------------ -->
+        <!-- ----------------Parallelogram Start------------ -->
+        <div class="card w-full bg-base-100 border border-[#1111111A]">
+          <figure class="px-10 pt-10">
+            <img src="./images/parallelogram.png" alt="Shoes" class="h-48" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Parallelogram</h4>
+            <p>Area (A) = b x h</p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="b"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="h"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
 
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
+        <!-- ----------------Parallelogram End------------ -->
+        <!-- ----------------Rhombus Start------------ -->
+        <div class="card w-full bg-base-100 border border-[#1111111A]">
+          <figure class="px-10 pt-10">
+            <img src="./images/rhombus.png" alt="Shoes" class="h-48" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Rhombus</h4>
+            <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="d1"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="d2"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
 
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card w-96 bg-base-100 border border-[#1111111A]">
-        <figure class="px-10 pt-10">
-          <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-        </figure>
-        <div class="card-body items-center text-center flex flex-col gap-6">
-          <h4 class="card-title">Triangle</h4>
-          <p>Area (A) = 0.5 x b x h</p>
-          <div class="flex gap-4">
-            <input
-              type="text"
-              placeholder="b"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-            <input
-              type="text"
-              placeholder="h"
-              class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
-            />
-            <span>cm</span>
-          </div>
 
-          <div class="card-actions">
-            <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+        <!-- ----------------Rhombus End----------- -->
+        <!-- ----------------Pentagon Start------------ -->
+        <div class="card w-full bg-base-100 border border-[#1111111A]">
+          <figure class="px-10 pt-10">
+            <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Pentagon</h4>
+            <p>Area (A) = 0.5 x p x b</p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="p"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="b"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-     </main> -->
+        <!-- ----------------Pentagon End------------ -->
+        <!-- ----------------Ellipse Start------------ -->
+
+        <div class="card w-full bg-base-100 border border-[#1111111A]">
+          <figure class="px-10 pt-10">
+            <img src="./images/ellipse.png" alt="Shoes" class="h-48" />
+          </figure>
+          <div class="card-body items-center text-center flex flex-col gap-6">
+            <h4 class="card-title">Ellipse</h4>
+            <p class="flex items-center">
+              <span>Area (A) = </span><img class="h-3 w-2" src="./images/pi.png" alt="" /><span
+                >ab</span
+              >
+            </p>
+            <div class="flex gap-4">
+              <input
+                type="text"
+                placeholder="a"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+              <input
+                type="text"
+                placeholder="b"
+                class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
+              />
+              <span>cm</span>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------Ellipse End------------ -->
+      </section>
+      <section class="lg:w-[25%] md:w-[25%] w-full">
+        <div class="card w-full h-full bg-base-100 border border-[#1111111A]">
+          <h2 class="text-center text-xl font-bold mt-5 underline">Area Calculation</h2>
+          <div class="overflow-x-auto">
+            <table class="table table-compact w-full">
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>121</td>
+                  <td>
+                    <button class="bg-[#1090D8] p-2 rounded text-xs">
+                      Convert to m<sup>2</sup>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Hart Hagerty</td>
+                  <td>666666</td>
+                  <td>
+                    <button class="bg-[#1090D8] p-2 rounded text-xs">
+                      Convert to m<sup>2</sup>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>76786</td>
+                  <td>887987</td>
+                  <td>
+                    <button class="bg-[#1090D8] p-2 rounded text-xs">
+                      Convert to m<sup>2</sup>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
