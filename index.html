@@ -35,24 +35,30 @@
 
     <main class="w-[98%] mx-auto mt-10 mb-20 flex flex-col lg:flex-row lg:px-6 md:flex-row gap-3">
       <!-- --------------Triangle Start--------------- -->
-      <section class="lg:w-[75%] md:w-[75%] w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2">
+      <section
+        class="lg:w-[75%] md:w-[75%] w-full grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-2"
+      >
         <div
-          class="card w-full mx-auto bg-base-100 border border-[#1111111A]"
+          id="triangle"
+          class="autoColor card w-full mx-auto bg-base-100 border border-[#1111111A]"
         >
           <figure class="px-10 pt-10">
             <img src="./images/triangle.png" alt="Shoes" class="h-48" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Triangle</h4>
+            <h4 class="card-title" id="triangleTitle">Triangle</h4>
             <p>Area (A) = 0.5 x b x h</p>
+            <p>b = <span id="triangleBase"></span>, h = <span id="triangleHeight"></span></p>
             <div class="flex gap-4">
               <input
+                id="triangleBaseInput"
                 type="text"
                 placeholder="b"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="triangleHeightInput"
                 type="text"
                 placeholder="h"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -61,27 +67,35 @@
             </div>
 
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button
+                id="calculateTriangle"
+                class="calculate btn-wide btn border-none bg-[#1090D8]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- ---------------Triangle End---------------- -->
         <!-- ----------------Rectangle Start------------ -->
-        <div class="card w-full bg-base-100 border border-[#1111111A]">
+        <div id="rectangle" class="autoColor card w-full bg-base-100 border border-[#1111111A]">
           <figure class="px-10 pt-10">
             <img src="./images/rectangle.png" alt="Shoes" class="h-48" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Rectangle</h4>
+            <h4 class="card-title" id="rectangleTitle">Rectangle</h4>
             <p>Area (A) = w x l</p>
+            <p>b = <span id="rectangleWidth"></span>, h = <span id="rectangleLength"></span></p>
             <div class="flex gap-4">
               <input
+                id="rectangleWidthInput"
                 type="text"
                 placeholder="w"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="rectangleLengthInput"
                 type="text"
                 placeholder="l"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -89,27 +103,34 @@
               <span>cm</span>
             </div>
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button id="calculateRectangle" class="btn-wide btn border-none bg-[#1090D8]">
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- ----------------Rectangle End------------ -->
         <!-- ----------------Parallelogram Start------------ -->
-        <div class="card w-full bg-base-100 border border-[#1111111A]">
+        <div id="parallelogram" class="autoColor card w-full bg-base-100 border border-[#1111111A]">
           <figure class="px-10 pt-10">
             <img src="./images/parallelogram.png" alt="Shoes" class="h-48" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Parallelogram</h4>
+            <h4 class="card-title" id="paraTitle">Parallelogram</h4>
             <p>Area (A) = b x h</p>
+            <p>
+              b = <span id="parallelogramBase"></span>, h = <span id="parallelogramHeight"></span>
+            </p>
             <div class="flex gap-4">
               <input
+                id="parallelogramBaseInput"
                 type="text"
                 placeholder="b"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="parallelogramHeightInput"
                 type="text"
                 placeholder="h"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -118,27 +139,38 @@
             </div>
 
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button
+                id="parallelogramCalculateButton"
+                class="calculate btn-wide btn border-none bg-[#1090D8]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- ----------------Parallelogram End------------ -->
         <!-- ----------------Rhombus Start------------ -->
-        <div class="card w-full bg-base-100 border border-[#1111111A]">
+        <div id="rhombus" class="autoColor card w-full bg-base-100 border border-[#1111111A]">
           <figure class="px-10 pt-10">
             <img src="./images/rhombus.png" alt="Shoes" class="h-48" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Rhombus</h4>
+            <h4 class="card-title" id="rhombusTitle">Rhombus</h4>
             <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+            <p>
+              d<sub>1</sub> = <span id="rhombusDiagonal1"></span>, d<sub>2</sub> =
+              <span id="rhombusDiagonal2"></span>
+            </p>
             <div class="flex gap-4">
               <input
+                id="rhombusDiagonal1Input"
                 type="text"
                 placeholder="d1"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="rhombusDiagonal2Input"
                 type="text"
                 placeholder="d2"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -147,28 +179,36 @@
             </div>
 
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button
+                id="rhombusCalculateButton"
+                class="calculate btn-wide btn border-none bg-[#1090D8]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
         </div>
 
         <!-- ----------------Rhombus End----------- -->
         <!-- ----------------Pentagon Start------------ -->
-        <div class="card w-full bg-base-100 border border-[#1111111A]">
+        <div id="pentagon" class="autoColor card w-full bg-base-100 border border-[#1111111A]">
           <figure class="px-10 pt-10">
             <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Pentagon</h4>
+            <h4 class="card-title" id="pentagonTitle">Pentagon</h4>
             <p>Area (A) = 0.5 x p x b</p>
+            <p>p = <span id="pentagonPerimeter"></span>, b = <span id="pentagonBase"></span></p>
             <div class="flex gap-4">
               <input
+                id="pentagonPerimeterInput"
                 type="text"
                 placeholder="p"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="pentagonBaseInput"
                 type="text"
                 placeholder="b"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -177,32 +217,40 @@
             </div>
 
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button
+                id="pentagonCalculateButton"
+                class="calculate btn-wide btn border-none bg-[#1090D8]"
+              >
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- ----------------Pentagon End------------ -->
         <!-- ----------------Ellipse Start------------ -->
 
-        <div class="card w-full bg-base-100 border border-[#1111111A]">
+        <div id="ellipse" class="autoColor card w-full bg-base-100 border border-[#1111111A]">
           <figure class="px-10 pt-10">
             <img src="./images/ellipse.png" alt="Shoes" class="h-48" />
           </figure>
           <div class="card-body items-center text-center flex flex-col gap-6">
-            <h4 class="card-title">Ellipse</h4>
+            <h4 class="card-title" id="ellipseTitle">Ellipse</h4>
             <p class="flex items-center">
               <span>Area (A) = </span><img class="h-3 w-2" src="./images/pi.png" alt="" /><span
                 >ab</span
               >
             </p>
+            <p>a = <span id="ellipseA"></span>, b = <span id="ellipseB"></span></p>
             <div class="flex gap-4">
               <input
+                id="ellipseAInput"
                 type="text"
                 placeholder="a"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
               />
               <span>cm</span>
               <input
+                id="ellipseBInput"
                 type="text"
                 placeholder="b"
                 class="input input-bordered bg-[#F1F1F1] input-sm border-none rounded-lg w-16"
@@ -211,7 +259,7 @@
             </div>
 
             <div class="card-actions">
-              <button class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
+              <button id="ellipseCalculateButton" class="btn-wide btn border-none bg-[#1090D8]">Calculate</button>
             </div>
           </div>
         </div>
@@ -222,42 +270,19 @@
           <h2 class="text-center text-xl font-bold mt-5 underline">Area Calculation</h2>
           <div class="overflow-x-auto">
             <table class="table table-compact w-full">
-              <tbody>
-                <tr>
-                  <th>1</th>
-                  <td>Cy Ganderton</td>
-                  <td>121</td>
-                  <td>
-                    <button class="bg-[#1090D8] p-2 rounded text-xs">
-                      Convert to m<sup>2</sup>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>666666</td>
-                  <td>
-                    <button class="bg-[#1090D8] p-2 rounded text-xs">
-                      Convert to m<sup>2</sup>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th>3</th>
-                  <td>76786</td>
-                  <td>887987</td>
-                  <td>
-                    <button class="bg-[#1090D8] p-2 rounded text-xs">
-                      Convert to m<sup>2</sup>
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
+              <tbody id="tableContainer"></tbody>
             </table>
           </div>
         </div>
       </section>
     </main>
+    <script src="JS/randomColorGenerate.js"></script>
+    <script src="JS/calculateMethods.js"></script>
+    <script src="JS/triangleArea.js"></script>
+    <script src="JS/rectangleArea.js"></script>
+    <script src="JS/parallelogramArea.js"></script>
+    <script src="JS/rhombusArea.js"></script>
+    <script src="JS/pentagonArea.js"></script>
+    <script src="JS/ellipseArea.js"></script>
   </body>
 </html>
