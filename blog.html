@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blogs</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl font-bold text-center mt-10">Welcome to My Blogs</h1>
+    </header>
+    <main>
+      <div class="bg-neutral-100 shadow-lg border w-[90%] mx-auto mt-5">
+        <h3 class="text-3xl text-center font-semibold p-2">
+          What is DOM and what is the purpose of DOM?
+        </h3>
+        <p class="texl-xl text-justify p-5">
+          The Document Object Model (DOM) is a programming interface.It represent tree like
+          structure of webpage.Every node of the tree is a object which represent the
+          elements,attibute,text etc.
+          <br />
+          The purpose of DOM is that by using the DOM, we can write programs that can respond to
+          user interactions, such as clicking a button, and update the web page content accordingly.
+          This enables developers to create web pages that provide a more engaging and interactive
+          user experience.
+        </p>
+      </div>
+      <div class="bg-neutral-100 shadow-lg border w-[90%] mx-auto mt-5">
+        <h3 class="text-3xl text-center font-semibold p-2">
+          How will you select HTML elements using DOM? Name the DOM methods.
+        </h3>
+        <p class="texl-xl text-justify p-5">
+          We can select HTML elements using DOM by using various DOM methods. Here are some of the
+          most commonly used DOM methods for selecting elements:
+          <br />
+        </p>
+        <ol class="list-decimal list-inside texl-xl text-justify px-5 pb-5">
+          <li>document.getElementById()</li>
+          <li>document.getElementsByClassName()</li>
+          <li>document.getElementsByTagName()</li>
+          <li>document.querySelector()</li>
+          <li>document.querySelectorAll()</li>
+        </ol>
+      </div>
+      <div class="bg-neutral-100 shadow-lg border w-[90%] mx-auto mt-5">
+        <h3 class="text-3xl text-center font-semibold p-2">What is event bubble?</h3>
+        <p class="texl-xl text-justify p-5">
+          Event bubble in DOM means if there is a event handler in an elemet and it has a parent
+          elements the the event handler of child element will trigger first.Then the parent's event
+          handler will be executed, followed by its parent element's event handler, and so on, until
+          the event reaches the top level element just like a bubble in water.
+        </p>
+      </div>
+      <div class="bg-neutral-100 shadow-lg border w-[90%] mx-auto mt-5">
+        <h3 class="text-3xl text-center font-semibold p-2">
+          What is a callback function and why will you use it?
+        </h3>
+        <p class="texl-xl text-justify p-5">
+          A callback function is a function that is passed as an argument to another function and is
+          executed inside the other function. The purpose of a callback function is to allow a
+          function to call another function and then receive a result or perform an action based on
+          that result.
+          <br />
+          I use Callback function in event handler to perform some action when the event is
+          triggered.So that I can perform some action when the event is triggered and I can reuse
+          the event handler for multiple elements.
+        </p>
+      </div>
+    </main>
+    <div class="flex justify-center m-5">
+      <a href="index.html"> <button class="btn btn-wide mx-auto">Back to main page</button> </a>
+    </div>
+  </body>
+</html>
