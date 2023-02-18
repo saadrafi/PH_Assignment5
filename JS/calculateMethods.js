@@ -28,7 +28,6 @@ function updateField(id, value) {
   document.getElementById(id).innerText = value.toFixed(2) + "cm";
 }
 
-
 // This function is used to display the value of the parameters of the shape in the text field
 function setValue(getId, setId) {
   const value = getInputValueByID(getId);
@@ -45,16 +44,12 @@ function displayResult(name, result) {
   const tr = document.createElement("tr");
   tr.innerHTML = `<td>${++serial}</td>
     <td>${name}</td>
-    <td>${result}cm<sup>2</sup></td>
+    <td><span>${result}</span><span>cm</span><sup>2</sup></td>
      <td>
                     <button class="bg-[#1090D8] p-2 rounded text-xs">
-                      Convert to m<sup>2</sup>
+                    Convert to m<sup>2</sup>
                     </button>
     </td>
     `;
   document.getElementById("tableContainer").appendChild(tr);
 }
-
-
-  
-
