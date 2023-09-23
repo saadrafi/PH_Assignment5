@@ -44,7 +44,7 @@ function displayResult(name, result) {
   const tr = document.createElement("tr");
   tr.innerHTML = `<td>${++serial}</td>
     <td>${name}</td>
-    <td><span>${result}</span><span>cm</span><sup>2</sup></td>
+    <td><span>${result.toFixed(2)}</span><span>cm</span><sup>2</sup></td>
      <td>
                     <button class="bg-[#1090D8] p-2 rounded text-xs">
                     Convert to m<sup>2</sup>
